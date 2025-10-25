@@ -9,7 +9,6 @@ document.addEventListener("DOMContentLoaded", () => {
     try {
       const response = await fetch("/activities");
       const activities = await response.json();
-      console.log("Activities data:", activities); // Debug the data
 
       // Clear loading message
       activitiesList.innerHTML = "";

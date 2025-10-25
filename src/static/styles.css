@@ -77,12 +77,29 @@ section h3 {
 .participants-list {
   margin-top: 10px;
   padding-left: 20px;
+  list-style: none;  /* Hide bullet points */
 }
 
 .participants-list li {
   color: #666;
   font-size: 0.9em;
   margin-bottom: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-icon {
+  cursor: pointer;
+  color: #c62828;
+  margin-left: 10px;
+  font-size: 1.1em;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.delete-icon:hover {
+  opacity: 1;
 }
 
 .participants-header {
